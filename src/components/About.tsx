@@ -7,7 +7,7 @@ export function About() {
         <div className="md:col-span-2 text-slate-400 text-lg leading-relaxed space-y-6">
           <p>
                          I design and develop fast, reliable web systems using modern frontend and backend technologies,
- I'm a Full-Stack Web Developer with hands on experience building production web applications for real clients.
+ I'm a Full Stack Web Developer with hands on experience building production web applications for real clients.
           </p>
           <p>
             I work across the stack from responsive interfaces to structured backends and databases. My focus is performance, scalability, and clean architecture.
