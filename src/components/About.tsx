@@ -6,13 +6,14 @@ export function About() {
       <div className="grid md:grid-cols-3 gap-12">
         <div className="md:col-span-2 text-slate-400 text-lg leading-relaxed space-y-6">
           <p>
-            Full-Stack Web Developer with hands-on experience building production web applications for real clients.
+                         I design and develop fast, reliable web systems using modern frontend and backend technologies,
+ I'm a Full-Stack Web Developer with hands on experience building production web applications for real clients.
           </p>
           <p>
-            I work across the stack — from responsive React interfaces to structured Node.js backends and SQL databases. My focus is performance, scalability, and clean architecture.
+            I work across the stack from responsive interfaces to structured backends and databases. My focus is performance, scalability, and clean architecture.
           </p>
           <p>
-            I build systems that work in the real world.
+           I build high performing web applications that help businesses attract users, improve engagement, and drive measurable results. I build systems that work in the real world. 
           </p>
         </div>
         <div className="relative group">

@@ -12,11 +12,9 @@ export function Hero() {
               Destiny Odalonu.
             </h1>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mb-8 tracking-tight">
-              Full-Stack Web Developer Building Scalable Web Applications
+              I'm A Full-Stack Web Developer Building Scalable Web Applications
             </h2>
-            <p className="text-lg md:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed">
-              I design and develop fast, reliable web systems using modern frontend and backend technologies.
-            </p>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#projects">
                 <Button size="lg" className="w-full sm:w-auto group">
