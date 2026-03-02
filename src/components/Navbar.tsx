@@ -57,7 +57,11 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 max-w-6xl flex justify-between items-center">
-        <a href="#home" className="flex items-center gap-2 group">
+        <a 
+          href="#home" 
+          className="flex items-center gap-2 group" 
+          onClick={() => setIsOpen(false)}
+        >
           <img 
             src="https://i.ibb.co/Q7XsrXtY/odlogo.png" 
             alt="Destiny Odalonu Logo" 

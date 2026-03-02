@@ -7,7 +7,7 @@ export function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-20">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-          <div className="flex-1 max-w-3xl">
+          <div className="flex-1 max-w-3xl mt-12 md:mt-0">
             <p className="text-blue-400 font-mono mb-6 tracking-wide">Hi, my name is</p>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight">
               Destiny Odalonu.
