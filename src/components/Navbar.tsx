@@ -54,7 +54,7 @@ export function Navbar() {
       <nav
         className={cn(
           'fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md',
-          scrolled ? 'bg-slate-900/90 border-b border-slate-800 shadow-lg py-2' : 'bg-[#062c59]/90 border-b border-[#062c59] py-3'
+          scrolled ? 'bg-slate-900/90 border-b border-blue-500/20 shadow-lg py-1.5' : 'bg-[#062c59]/90 border-b border-blue-500/20 py-1.5'
         )}
       >
         <div className="container mx-auto px-6 max-w-6xl flex justify-between items-center">
@@ -66,7 +66,7 @@ export function Navbar() {
             <img 
               src="https://i.ibb.co/Q7XsrXtY/odlogo.png" 
               alt="Destiny Odalonu Logo" 
-              className="h-10 w-auto transition-transform group-hover:scale-105"
+              className="h-8 w-auto transition-transform group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
           </a>
