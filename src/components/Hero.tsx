@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'motion/react';
 import { Button } from './ui/Button';
 
 export function Hero() {
@@ -30,7 +31,12 @@ export function Hero() {
             </div>
           </div>
           
-          <div className="flex-1 flex justify-center md:justify-end">
+          <motion.div 
+            className="flex-1 flex justify-center md:justify-end"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
               <img 
@@ -40,7 +46,7 @@ export function Hero() {
                 referrerPolicy="no-referrer"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
