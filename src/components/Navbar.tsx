@@ -114,7 +114,7 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          'fixed inset-0 bg-slate-950/95 backdrop-blur-xl z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-300 md:hidden',
+          'fixed inset-0 bg-slate-950/98 backdrop-blur-xl z-40 flex flex-col items-center justify-start pt-32 gap-6 transition-transform duration-300 md:hidden',
           isOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
@@ -125,18 +125,19 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-2xl font-medium transition-colors",
+                "text-xl font-medium transition-colors py-2",
                 isActive ? "text-blue-400" : "text-slate-300 hover:text-blue-400"
               )}
               onClick={() => setIsOpen(false)}
             >
+              <span className="text-blue-500 mr-2 text-base">/</span>
               {link.name}
             </a>
           );
         })}
         <a
           href="/resume.pdf"
-          className="px-8 py-3 text-lg font-medium text-blue-400 border border-blue-500/30 rounded hover:bg-blue-500/10 transition-colors"
+          className="px-6 py-2.5 text-base font-medium text-blue-400 border border-blue-500/30 rounded hover:bg-blue-500/10 transition-colors mt-4"
           onClick={() => setIsOpen(false)}
         >
           Resume
