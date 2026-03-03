@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 const skills = {
   Frontend: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Responsive Design'],
-  Backend: ['Node.js', 'Python', 'REST APIs', 'SQL', 'Authentication'],
+  Backend: ['Node.js', 'Python', 'PHP', 'REST APIs', 'SQL', 'Authentication'],
   'CMS & Tools': ['WordPress', 'Git & GitHub', 'Deployment (Vercel / Netlify)', 'Performance Optimization'],
 };
 
