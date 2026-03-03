@@ -2,7 +2,7 @@ import { Section } from './ui/Section';
 
 const skills = {
   Frontend: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Responsive Design'],
-  Backend: ['Node.js', 'REST APIs', 'SQL', 'Authentication'],
+  Backend: ['Node.js', 'Python', 'REST APIs', 'SQL', 'Authentication'],
   'CMS & Tools': ['WordPress', 'Git & GitHub', 'Deployment (Vercel / Netlify)', 'Performance Optimization'],
 };
 
