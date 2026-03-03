@@ -37,7 +37,7 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="relative w-full aspect-square max-w-[400px] md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]">
+            <div className="relative w-full aspect-square max-w-[500px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px]">
               <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
               <img 
                 src="https://i.ibb.co/Q7XsrXtY/odlogo.png" 
