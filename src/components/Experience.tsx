@@ -1,4 +1,5 @@
 import { Section } from './ui/Section';
+import { Download } from 'lucide-react';
 
 const experiences = [
   {
@@ -63,6 +64,18 @@ export function Experience() {
             
           </div>
         ))}
+      </div>
+      
+      <div className="mt-16 flex justify-center">
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-lg hover:bg-blue-500/20 transition-all duration-300 font-medium group"
+        >
+          <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
+          Download Resume
+        </a>
       </div>
     </Section>
   );
