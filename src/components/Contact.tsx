@@ -1,20 +1,40 @@
 import { Mail, Github, Linkedin, Send } from 'lucide-react';
 import { Section } from './ui/Section';
 import { Button } from './ui/Button';
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
-  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (!formRef.current) return;
+
     setFormState('submitting');
-    // Simulate API call
-    setTimeout(() => {
+
+    try {
+      // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
+      // The public key 'tY9bi22jt0wAeBQ-w' is provided by you
+      await emailjs.sendForm(
+        'service_ymmonfd', 
+        'template_t08k5ub', 
+        formRef.current, 
+        'tY9bi22jt0wAeBQ-w'
+      );
+      
       setFormState('success');
-      // Reset after 3 seconds
-      setTimeout(() => setFormState('idle'), 3000);
-    }, 1000);
+      formRef.current.reset();
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setFormState('idle'), 5000);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setFormState('error');
+      // Reset error message after 5 seconds
+      setTimeout(() => setFormState('idle'), 5000);
+    }
   };
 
   return (
@@ -27,18 +47,18 @@ export function Contact() {
           </p>
           
           <div className="space-y-4">
-            <a href="mailto:hello@example.com" className="flex items-center gap-4 text-slate-400 hover:text-blue-400 transition-colors group">
+            <a href="mailto:destinycodes01@gmail.com" className="flex items-center gap-4 text-slate-400 hover:text-blue-400 transition-colors group">
               <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center border border-slate-800 group-hover:border-blue-500/30 transition-colors">
                 <Mail className="w-5 h-5" />
               </div>
-              <span className="text-lg">hello@example.com</span>
+              <span className="text-lg">destinycodes01@gmail.com</span>
             </a>
             
-            <a href="#" className="flex items-center gap-4 text-slate-400 hover:text-blue-400 transition-colors group">
+            <a href="https://github.com/CDCODE02" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-slate-400 hover:text-blue-400 transition-colors group">
               <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center border border-slate-800 group-hover:border-blue-500/30 transition-colors">
                 <Github className="w-5 h-5" />
               </div>
-              <span className="text-lg">github.com/destinyodalonu</span>
+              <span className="text-lg">github.com/CDCODE02</span>
             </a>
             
             <a href="#" className="flex items-center gap-4 text-slate-400 hover:text-blue-400 transition-colors group">
@@ -50,13 +70,14 @@ export function Contact() {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-xl">
+        <form ref={formRef} onSubmit={handleSubmit} className="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-xl">
           <div className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">Name</label>
               <input
                 type="text"
                 id="name"
+                name="user_name"
                 required
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                 placeholder="John Doe"
@@ -68,6 +89,7 @@ export function Contact() {
               <input
                 type="email"
                 id="email"
+                name="user_email"
                 required
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                 placeholder="john@example.com"
@@ -78,6 +100,7 @@ export function Contact() {
               <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">Message</label>
               <textarea
                 id="message"
+                name="message"
                 required
                 rows={4}
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors resize-none"
@@ -88,11 +111,19 @@ export function Contact() {
             <Button 
               type="submit" 
               className="w-full" 
-              disabled={formState !== 'idle'}
+              disabled={formState === 'submitting' || formState === 'success'}
             >
-              {formState === 'submitting' ? 'Sending...' : formState === 'success' ? 'Message Sent!' : 'Send Message'}
+              {formState === 'submitting' ? 'Sending...' : 
+               formState === 'success' ? 'Message Sent!' : 
+               formState === 'error' ? 'Failed to Send' : 'Send Message'}
               {formState === 'idle' && <Send className="ml-2 w-4 h-4" />}
             </Button>
+            
+            {formState === 'error' && (
+              <p className="text-red-400 text-sm text-center mt-2">
+                Something went wrong. Please try again later.
+              </p>
+            )}
           </div>
         </form>
       </div>
