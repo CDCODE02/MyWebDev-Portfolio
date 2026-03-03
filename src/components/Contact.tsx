@@ -43,8 +43,7 @@ export function Contact() {
         <div>
           <h3 className="text-2xl font-bold text-slate-100 mb-6">Let's Build Something Together</h3>
           <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-          </p>
+I’m currently open to new opportunities. If you have a project in mind or would like to collaborate, feel free to get in touch.          </p>
           
           <div className="space-y-4">
             <a href="mailto:destinycodes01@gmail.com" className="flex items-center gap-4 text-slate-400 hover:text-blue-400 transition-colors group">
