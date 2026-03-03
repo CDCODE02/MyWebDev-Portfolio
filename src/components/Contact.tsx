@@ -77,7 +77,7 @@ export function Contact() {
               <input
                 type="text"
                 id="name"
-                name="user_name"
+                name="name"
                 required
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                 placeholder="John Doe"
@@ -89,7 +89,7 @@ export function Contact() {
               <input
                 type="email"
                 id="email"
-                name="user_email"
+                name="email"
                 required
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                 placeholder="john@example.com"
