@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: 'OCAT Landing Page',
-    description: 'A playful, crypto-themed project bringing GitHub’s Octocat mascot to the Sui Blockchain. Designed as an interactive experience that demonstrates frontend skills while exploring blockchain integration for digital assets.',
+    description: 'A playful project bringing GitHub’s Octocat mascot to the Sui Blockchain. Built as an interactive experience showcasing frontend skills and Web3 integration.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/CDCODE02/ocat',
     demo: 'https://ocatdemo.vercel.app',
