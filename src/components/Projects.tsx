@@ -18,6 +18,14 @@ const projects = [
     demo: 'https://highrise-xi.vercel.app',
     image: 'https://i.ibb.co/nMHMdcTK/Highrise-landing.png'
   },
+  {
+    title: 'Xploit Brand Landing Page',
+    description: 'A high-converting personal brand website built for a Web3 marketing executive and community builder. Designed to showcase thought leadership, event expertise, and ecosystem growth experience while driving engagement.',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide React'],
+    github: 'https://github.com/CDCODE02/XploitWebsite',
+    demo: 'https://xploit-website.vercel.app',
+    image: 'https://i.ibb.co/fYdCT9Q7/Xploit.png'
+  },
 ];
 
 export function Projects() {
