@@ -50,6 +50,14 @@ const projects = [
     demo: 'https://ocatdemo.vercel.app',
     image: 'https://i.ibb.co/KpWwsCJ3/OCAT.png'
   },
+  {
+    title: 'SERVER Landing Page',
+    description: 'A Solana-based Web3 landing page providing tools for developers and traders, emphasizing decentralization, community, and impact. Built to showcase frontend expertise and blockchain integration.',
+    tech: ['JavaScript', 'HTML', 'CSS'],
+    github: 'https://github.com/CDCODE02/server',
+    demo: 'https://server-sand-six.vercel.app',
+    image: 'https://i.ibb.co/jvfG1ty3/SERVER.png'
+  },
 ];
 
 export function Projects() {
