@@ -11,28 +11,12 @@ const projects = [
     image: 'https://i.ibb.co/1GL3pYbv/Talric.png'
   },
   {
-    title: 'E-Commerce Dashboard',
-    description: 'A comprehensive dashboard for managing products, orders, and analytics. Features real-time data visualization and inventory tracking.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Chart.js'],
-    github: '#',
-    demo: '#',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3'
-  },
-  {
-    title: 'Task Management API',
-    description: 'Scalable RESTful API for a project management tool. Includes JWT authentication, role-based access control, and task scheduling.',
-    tech: ['Node.js', 'Express', 'MongoDB', 'Docker'],
-    github: '#',
-    demo: '#',
-    image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3'
-  },
-  {
-    title: 'Real Estate Platform',
-    description: 'Modern property listing platform with advanced search filters, map integration, and responsive image galleries.',
-    tech: ['Next.js', 'Tailwind CSS', 'Supabase', 'Leaflet'],
-    github: '#',
-    demo: '#',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2573&ixlib=rb-4.0.3'
+    title: 'High-Rise Landing Page',
+    description: 'A modern landing page for a decentralized real estate marketplace enabling property owners to tokenize and trade real-world assets (RWA) on the blockchain. Built to clearly communicate product value, innovation, and trust in a Web3 environment.',
+    tech: ['HTML', 'CSS', 'SCSS', 'JavaScript'],
+    github: 'https://github.com/CDCODE02/Highrise-landing-page',
+    demo: 'https://highrise-xi.vercel.app',
+    image: 'https://i.ibb.co/nMHMdcTK/Highrise-landing.png'
   },
 ];
 
