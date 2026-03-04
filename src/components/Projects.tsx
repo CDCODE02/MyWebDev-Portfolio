@@ -26,6 +26,14 @@ const projects = [
     demo: 'https://xploit-website.vercel.app',
     image: 'https://i.ibb.co/fYdCT9Q7/Xploit.png'
   },
+  {
+    title: 'Crossroad High School Website',
+    description: 'A modern, responsive website built for Crossroad Private High School to showcase its educational excellence and community-driven ethos. Features smooth animations, intuitive navigation, and a contact system powered by serverless APIs for seamless communication.',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Express', 'Vercel Serverless', 'Nodemailer'],
+    github: 'https://github.com/CDCODE02/schoolweb',
+    demo: 'https://crossroadschoolweb.vercel.app',
+    image: 'https://i.ibb.co/Y4XKV8pb/school.png'
+  },
 ];
 
 export function Projects() {
