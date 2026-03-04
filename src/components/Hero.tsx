@@ -19,13 +19,13 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#projects">
                 <Button size="lg" className="w-full sm:w-auto group">
-                  View Projects
+                  Projects Done
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
               <a href="#contact">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Contact Me
+                  Hire Me
                 </Button>
               </a>
             </div>
