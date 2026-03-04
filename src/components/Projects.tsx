@@ -34,6 +34,14 @@ const projects = [
     demo: 'https://crossroadschoolweb.vercel.app',
     image: 'https://i.ibb.co/Y4XKV8pb/school.png'
   },
+  {
+    title: 'DATBOI Landing Page',
+    description: 'A high-energy landing page bringing the viral $DATBOI meme to Web3. Built with full-stack integration, smooth animations, and AI-powered enhancements to deliver a playful yet technically advanced user experience.',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Express', 'Better SQLite3', 'Google GenAI SDK', 'Lucide React'],
+    github: 'https://github.com/CDCODE02/Datwebv2',
+    demo: 'https://datwebv2.vercel.app',
+    image: 'https://i.ibb.co/8DPv5NFQ/DATBOI.png'
+  },
 ];
 
 export function Projects() {
