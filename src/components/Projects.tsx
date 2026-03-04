@@ -42,6 +42,14 @@ const projects = [
     demo: 'https://datwebv2.vercel.app',
     image: 'https://i.ibb.co/8DPv5NFQ/DATBOI.png'
   },
+  {
+    title: 'OCAT Landing Page',
+    description: 'A playful, crypto-themed project bringing GitHub’s Octocat mascot to the Sui Blockchain. Designed as an interactive experience that demonstrates frontend skills while exploring blockchain integration for digital assets.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/CDCODE02/ocat',
+    demo: 'https://ocatdemo.vercel.app',
+    image: 'https://i.ibb.co/KpWwsCJ3/OCAT.png'
+  },
 ];
 
 export function Projects() {
