@@ -3,6 +3,14 @@ import { Section } from './ui/Section';
 
 const projects = [
   {
+    title: 'HiResume Resume Builder',
+    description: 'HiResume is a production ready web app for building, customizing, and downloading professional resumes. Features dynamic sections, multiple templates, auto-save, and shareable resume links.',
+    tech: ['JavaScript', 'HTML', 'CSS', 'React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Zustand', 'React Router DOM', 'Framer Motion', 'Lucide React', 'clsx & tailwind-merge', 'html2pdf.js', 'jsPDF', 'html-to-image', '@dnd-kit', 'lz-string', '@google/genai', '@emailjs/browser'],
+    github: 'https://github.com/CDCODE02/My-Resume-App',
+    demo: 'https://hiresumeapp.vercel.app',
+    image: 'https://i.ibb.co/qFc6m5Sm/Hi-Resume-Portfolio.png'
+  },
+  {
     title: 'Talric Lab Landing Page',
     description: 'A high-performance landing page built for a venture studio focused on transforming ideas into scalable startups across Web2 and Web3. Designed to communicate vision, credibility, and technical depth.',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Three.js', 'EmailJS'],
