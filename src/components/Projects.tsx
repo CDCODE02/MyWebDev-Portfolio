@@ -4,7 +4,7 @@ import { Section } from './ui/Section';
 const projects = [
   {
     title: 'HiResume Resume Builder',
-    description: 'HiResume is a production ready web app for building, customizing, and downloading professional resumes. Features dynamic sections, multiple templates, auto-save, and shareable resume links.',
+    description: 'HiResume is a production ready web app for building, customizing, and downloading professional resumes. Features dynamic sections, multiple templates and auto-save.',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Zustand', 'Framer Motion', '@dnd-kit', 'jsPDF'],
     github: 'https://github.com/CDCODE02/My-Resume-App',
     demo: 'https://hiresumeapp.vercel.app',
