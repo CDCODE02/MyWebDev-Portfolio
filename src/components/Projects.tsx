@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'HiResume Resume Builder',
     description: 'HiResume is a production ready web app for building, customizing, and downloading professional resumes. Features dynamic sections, multiple templates, auto-save, and shareable resume links.',
-    tech: ['JavaScript', 'HTML', 'CSS', 'React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Zustand', 'React Router DOM', 'Framer Motion', 'Lucide React', 'clsx & tailwind-merge', 'html2pdf.js', 'jsPDF', 'html-to-image', '@dnd-kit', 'lz-string', '@google/genai', '@emailjs/browser'],
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Zustand', 'Framer Motion', '@dnd-kit', 'jsPDF'],
     github: 'https://github.com/CDCODE02/My-Resume-App',
     demo: 'https://hiresumeapp.vercel.app',
     image: 'https://i.ibb.co/qFc6m5Sm/Hi-Resume-Portfolio.png'
