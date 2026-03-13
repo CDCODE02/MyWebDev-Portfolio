@@ -5,25 +5,32 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const experiences = [
   {
-    role: 'Full Stack Developer',
-    company: 'Tech Company',
-    period: '2023 - Present',
-    description: 'Developing scalable web applications using React, Node.js, and TypeScript. Collaborating with cross-functional teams to deliver high-quality software solutions.',
-    technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL']
+    role: 'Full-Stack Web Developer',
+    company: 'Talric Lab',
+    period: 'December 2025 — Present',
+    description: 'Develop and maintain scalable web applications for startup products. Design system architecture, build responsive user interfaces using React, develop backend services and APIs, and deploy production applications. Work closely with founders to transform early-stage ideas into functional digital products.',
+    technologies: ['React', 'Node.js', 'System Architecture', 'APIs']
   },
   {
-    role: 'Frontend Developer',
-    company: 'Digital Agency',
-    period: '2021 - 2023',
-    description: 'Built responsive and interactive user interfaces for various clients. Optimized website performance and ensured cross-browser compatibility.',
-    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Figma']
+    role: 'Full-Stack Developer',
+    company: 'HighRise',
+    period: 'August 2024 — February 2025',
+    description: 'Co-founded and developed a web platform focused on real estate investment management. Built the product website, implemented application logic for asset management workflows, and developed integrations supporting digital property investment presentation and management.',
+    technologies: ['Web Development', 'Asset Management', 'Integrations']
   },
   {
-    role: 'Web Developer Intern',
-    company: 'Startup Inc.',
-    period: '2020 - 2021',
-    description: 'Assisted in the development of internal tools and customer-facing features. Gained hands-on experience with modern web development practices.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Git']
+    role: 'Software Developer',
+    company: 'Zycta AI',
+    period: 'April 2023 — November 2024',
+    description: 'Developed automated systems for real-time data monitoring and analytics. Built backend logic and automation tools that processed large data streams, integrated APIs, and generated insights through automated workflows and dashboards.',
+    technologies: ['Backend Logic', 'Automation', 'Data Analytics', 'APIs']
+  },
+  {
+    role: 'Backend Developer',
+    company: 'BorderPay',
+    period: 'January 2022 — August 2022',
+    description: 'Worked on backend services for a cross-border payment platform. Contributed to transaction processing systems, API integrations, and infrastructure designed to support secure and efficient international payments.',
+    technologies: ['Backend Services', 'API Integration', 'Payment Systems']
   }
 ];
 
