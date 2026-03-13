@@ -2,9 +2,9 @@ import { Section } from './ui/Section';
 import { motion } from 'motion/react';
 
 const skills = {
-  Frontend: ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Responsive Design'],
-  Backend: ['Node.js', 'Python', 'PHP', 'REST APIs', 'SQL', 'Authentication'],
-  'CMS & Tools': ['WordPress', 'Git & GitHub', 'Deployment Vercel', 'Performance Optimization'],
+  'FRONTEND': ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
+  'BACKEND & DB': ['Node.js', 'Express', 'PHP', 'Python', 'MySQL', 'Supabase'],
+  'CMS & TOOLS': ['WordPress', 'Git & GitHub', 'Vite', 'REST APIs', 'Framer Motion', 'Zustand'],
 };
 
 const containerVariants = {
