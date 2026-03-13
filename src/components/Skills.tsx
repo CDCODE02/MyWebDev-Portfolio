@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 const skills = {
   'FRONTEND': ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
   'BACKEND & DB': ['Node.js', 'Express', 'PHP', 'Python', 'MySQL', 'Supabase'],
-  'CMS & TOOLS': ['WordPress', 'Git & GitHub', 'Vite', 'REST APIs', 'Framer Motion', 'Zustand'],
+  'CMS & TOOLS': ['WordPress', 'Git & GitHub', 'Vite', 'Framer Motion', 'Zustand', 'AI Tools', 'Prompt Engineering'],
 };
 
 const containerVariants = {
