@@ -6,30 +6,30 @@ import { motion, AnimatePresence } from 'motion/react';
 const experiences = [
   {
     role: 'Full-Stack Web Developer',
-    company: 'Talric Lab',
+    company: 'Talric Labs',
     period: 'December 2025 — Present',
-    description: 'Develop and maintain scalable web applications for startup products. Design system architecture, build responsive user interfaces using React, develop backend services and APIs, and deploy production applications. Work closely with founders to transform early-stage ideas into functional digital products.',
+    description: 'Develop scalable web applications for startup products. Build React interfaces, develop backend APIs, and deploy production ready applications.',
     technologies: ['React', 'Node.js', 'System Architecture', 'APIs']
   },
   {
     role: 'Full-Stack Developer',
     company: 'HighRise',
     period: 'August 2024 — February 2025',
-    description: 'Co-founded and developed a web platform focused on real estate investment management. Built the product website, implemented application logic for asset management workflows, and developed integrations supporting digital property investment presentation and management.',
+    description: 'Co-founded and developed a web platform for digital real estate investment. Built the product website and core features for managing and presenting property assets.',
     technologies: ['Web Development', 'Asset Management', 'Integrations']
   },
   {
     role: 'Software Developer',
     company: 'Zycta AI',
     period: 'April 2023 — November 2024',
-    description: 'Developed automated systems for real-time data monitoring and analytics. Built backend logic and automation tools that processed large data streams, integrated APIs, and generated insights through automated workflows and dashboards.',
+    description: 'Built automated systems for real time data monitoring and analytics, developing backend tools that processed large data streams and integrated external APIs.',
     technologies: ['Backend Logic', 'Automation', 'Data Analytics', 'APIs']
   },
   {
     role: 'Backend Developer',
     company: 'BorderPay',
     period: 'January 2022 — August 2022',
-    description: 'Worked on backend services for a cross-border payment platform. Contributed to transaction processing systems, API integrations, and infrastructure designed to support secure and efficient international payments.',
+    description: 'Developed backend services for a cross border payment platform, building transaction processing systems and API integrations for secure international payments.',
     technologies: ['Backend Services', 'API Integration', 'Payment Systems']
   }
 ];
