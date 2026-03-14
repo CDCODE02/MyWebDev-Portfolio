@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from './ui/Button';
+import { ResumeModal } from './ResumeModal';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -15,6 +16,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [showResumeModal, setShowResumeModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,14 +95,12 @@ export function Navbar() {
                 </a>
               );
             })}
-            <a
-              href="https://drive.google.com/uc?export=download&id=14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-medium text-blue-400 border border-blue-500/30 rounded hover:bg-blue-500/10 transition-colors"
+            <button
+              onClick={() => setShowResumeModal(true)}
+              className="px-4 py-2 text-sm font-medium text-blue-400 border border-blue-500/30 rounded hover:bg-blue-500/10 transition-colors cursor-pointer"
             >
               Resume
-            </a>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -138,16 +138,21 @@ export function Navbar() {
             </a>
           );
         })}
-        <a
-          href="https://drive.google.com/uc?export=download&id=14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50 border border-blue-500/30 text-blue-400 hover:bg-blue-500/10 h-12 px-8 text-lg mt-6 w-48"
-          onClick={() => setIsOpen(false)}
+        <button
+          onClick={() => {
+            setIsOpen(false);
+            setShowResumeModal(true);
+          }}
+          className="inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50 border border-blue-500/30 text-blue-400 hover:bg-blue-500/10 h-12 px-8 text-lg mt-6 w-48 cursor-pointer"
         >
           Resume
-        </a>
+        </button>
       </div>
+
+      <ResumeModal 
+        isOpen={showResumeModal} 
+        onClose={() => setShowResumeModal(false)} 
+      />
     </>
   );
 }

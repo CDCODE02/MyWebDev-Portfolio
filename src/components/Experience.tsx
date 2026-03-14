@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Section } from './ui/Section';
 import { Download, Eye } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ResumeModal } from './ResumeModal';
 
 const experiences = [
   {
@@ -34,6 +36,8 @@ const experiences = [
 ];
 
 export function Experience() {
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
   return (
     <Section id="experience" title="Work Experience">
       <div className="space-y-12 relative">
@@ -93,15 +97,13 @@ export function Experience() {
       </div>
       
       <div className="mt-16 flex flex-col sm:flex-row justify-center gap-4">
-        <a
-          href="https://drive.google.com/file/d/14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => setShowResumeModal(true)}
           className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800/50 text-slate-300 border border-slate-700 rounded-lg hover:bg-slate-700 transition-all duration-300 font-medium group cursor-pointer"
         >
           <Eye className="w-5 h-5 group-hover:scale-110 transition-transform" />
           Preview Resume
-        </a>
+        </button>
         <a
           href="https://drive.google.com/uc?export=download&id=14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ"
           target="_blank"
@@ -112,6 +114,11 @@ export function Experience() {
           Download Resume
         </a>
       </div>
+
+      <ResumeModal 
+        isOpen={showResumeModal} 
+        onClose={() => setShowResumeModal(false)} 
+      />
     </Section>
   );
 }
