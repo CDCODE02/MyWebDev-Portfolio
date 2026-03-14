@@ -94,7 +94,7 @@ export function Navbar() {
               );
             })}
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/uc?export=download&id=14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-sm font-medium text-blue-400 border border-blue-500/30 rounded hover:bg-blue-500/10 transition-colors"
@@ -139,7 +139,7 @@ export function Navbar() {
           );
         })}
         <a
-          href="/resume.pdf"
+          href="https://drive.google.com/uc?export=download&id=14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50 border border-blue-500/30 text-blue-400 hover:bg-blue-500/10 h-12 px-8 text-lg mt-6 w-48"

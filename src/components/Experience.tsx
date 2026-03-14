@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import { Section } from './ui/Section';
-import { Download, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { Download, Eye } from 'lucide-react';
+import { motion } from 'motion/react';
 
 const experiences = [
   {
@@ -35,19 +34,6 @@ const experiences = [
 ];
 
 export function Experience() {
-  const [showResumeDialog, setShowResumeDialog] = useState(false);
-
-  const handleDownload = () => {
-    setShowResumeDialog(false);
-    // Create a temporary link to trigger download
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Destiny_Odalonu_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <Section id="experience" title="Work Experience">
       <div className="space-y-12 relative">
@@ -106,56 +92,26 @@ export function Experience() {
         ))}
       </div>
       
-      <div className="mt-16 flex justify-center">
-        <button
-          onClick={() => setShowResumeDialog(true)}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-lg hover:bg-blue-500/20 transition-all duration-300 font-medium group cursor-pointer"
+      <div className="mt-16 flex flex-col sm:flex-row justify-center gap-4">
+        <a
+          href="https://drive.google.com/file/d/14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800/50 text-slate-300 border border-slate-700 rounded-lg hover:bg-slate-700 transition-all duration-300 font-medium group cursor-pointer"
+        >
+          <Eye className="w-5 h-5 group-hover:scale-110 transition-transform" />
+          Preview Resume
+        </a>
+        <a
+          href="https://drive.google.com/uc?export=download&id=14hMIMgIKcEUgLLhI33aO4jKJ0JUM1SXQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-lg hover:bg-blue-500/20 transition-all duration-300 font-medium group cursor-pointer"
         >
           <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
           Download Resume
-        </button>
+        </a>
       </div>
-
-      {/* Confirmation Dialog */}
-      <AnimatePresence>
-        {showResumeDialog && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6 max-w-sm w-full shadow-2xl relative"
-            >
-              <button 
-                onClick={() => setShowResumeDialog(false)}
-                className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
-              >
-                <X size={20} />
-              </button>
-              
-              <h3 className="text-xl font-bold text-slate-100 mb-2">Download Resume?</h3>
-              <p className="text-slate-400 mb-6">
-                Are you sure you want to download the resume PDF?
-              </p>
-              
-              <div className="flex gap-3 justify-end">
-                <button 
-                  onClick={() => setShowResumeDialog(false)}
-                  className="px-4 py-2 text-slate-300 hover:text-white font-medium transition-colors"
-                >
-                  Cancel
-                </button>
-                <button 
-                  onClick={handleDownload}
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium transition-colors"
-                >
-                  Confirm Download
-                </button>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </Section>
   );
 }
