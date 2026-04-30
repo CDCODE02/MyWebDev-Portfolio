@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Talric Lab Landing Page',
-    description: 'A high-performance landing page built for a venture studio focused on transforming ideas into scalable startups across Web2 and Web3. Designed to communicate vision, credibility, and technical depth.',
+    description: 'A high performance landing page built for a venture studio focused on transforming ideas into scalable startups across Web2 and Web3. Designed to communicate vision, credibility, and technical depth.',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Three.js', 'EmailJS'],
     github: 'https://github.com/CDCODE02/Talriclab-web',
     demo: 'https://talriclab-web.vercel.app',
