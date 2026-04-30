@@ -19,6 +19,14 @@ const projects = [
     image: 'https://i.ibb.co/VphmS9P7/wixhubsyncimage.png'
   },
   {
+    title: 'Allied Universal Ship',
+    description: 'This product is a comprehensive logistics and courier tracking web platform. It features a dual-sided architecture catering to both everyday customers tracking packages and operations teams managing shipments.',
+    tech: ['React', 'TypeScript', 'Node.js', 'Express', 'Firebase', 'Tailwind CSS', 'Vite'],
+    github: 'https://github.com/CDCODE02/Allied-Univesal-Ship',
+    demo: 'https://www.allieduniversalship.xyz',
+    image: 'https://i.ibb.co/1V0G869/alliedship.png'
+  },
+  {
     title: 'Talric Lab Landing Page',
     description: 'A high performance landing page built for a venture studio focused on transforming ideas into scalable startups across Web2 and Web3. Designed to communicate vision, credibility, and technical depth.',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Three.js', 'EmailJS'],
