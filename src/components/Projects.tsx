@@ -11,6 +11,14 @@ const projects = [
     image: 'https://i.ibb.co/qFc6m5Sm/Hi-Resume-Portfolio.png'
   },
   {
+    title: 'WixHub Sync',
+    description: "This product is a Bi-Directional Contact Synchronization SaaS. Its primary purpose is to seamlessly bridge the gap between a user's Wix website and their HubSpot CRM without requiring manual data entry or complex integration platforms like Zapier.",
+    tech: ['TypeScript', 'Node.js', 'React', 'Tailwind CSS', 'Firebase', 'Vercel', 'OAuth', 'Webhooks', 'REST APIs'],
+    github: 'https://github.com/destinycodes01/WixHub-Sync',
+    demo: 'https://wixhubsync.vercel.app',
+    image: 'https://i.ibb.co/VphmS9P7/wixhubsyncimage.png'
+  },
+  {
     title: 'Talric Lab Landing Page',
     description: 'A high performance landing page built for a venture studio focused on transforming ideas into scalable startups across Web2 and Web3. Designed to communicate vision, credibility, and technical depth.',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Three.js', 'EmailJS'],
